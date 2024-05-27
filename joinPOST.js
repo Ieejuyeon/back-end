@@ -12,6 +12,6 @@ try {
       console.log(responseMessage.CREATED_USER, 'User ID:', userID);
       res.status(statusCode.CREATED).send(responseMessage.CREATED_USER);
 } catch (error) {
-      console.error( esponseMessage.CREATED_USER_FAIL, error);
+      console.error(responseMessage.CREATED_USER_FAIL, error);
       res.status(statusCode.INTERNAL_SERVER_ERROR).send(responseMessage.INTERNAL_SERVER_ERROR);
 }};
